@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.pc01.pointblank.TableActivity">
+
+    <!--<HorizontalScrollView-->
+        <!--android:id="@+id/horizontalScrollView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+
+    <!--</HorizontalScrollView>-->
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView" >
+
+        <TableLayout
+            android:id="@+id/tablelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000">
+            <TableRow
+                android:id="@+id/rowHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                    <!--android:id="@+id/textHeader"-->
+                    <!--/>-->
+
+            </TableRow>
+            <!--<TableRow-->
+                <!--android:id="@+id/giorni"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                    <!--android:text="Lun"-->
+                    <!--android:id="@+id/textView15"-->
+                    <!--android:layout_column="3" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                    <!--android:text="Mar"-->
+                    <!--android:id="@+id/textView16"-->
+                    <!--android:layout_column="4" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                    <!--android:text="Mer"-->
+                    <!--android:id="@+id/textView17"-->
+                    <!--android:layout_column="5" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                    <!--android:text="Gio"-->
+                    <!--android:id="@+id/textView18"-->
+                    <!--android:layout_column="6" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                    <!--android:text="Ven"-->
+                    <!--android:id="@+id/textView19"-->
+                    <!--android:layout_column="7" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                    <!--android:text="Sab"-->
+                    <!--android:id="@+id/textView20"-->
+                    <!--android:layout_column="8" />-->
+            <!--</TableRow>-->
+
+            <ScrollView
+                android:id="@+id/scroll"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent" >
+                <LinearLayout
+                    android:id="@+id/layoutIsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+
+                    <!--<TableRow-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="fill_parent">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                            <!--android:text="1"-->
+
+                            <!--android:layout_column="0" />-->
+                        <!--<Button-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="35dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:text="@string/new_button"-->
+                            <!--android:onClick="addMateria"-->
+                            <!--android:textSize="12sp"-->
+                            <!--android:layout_column="1" />-->
+
+                        <!--<Button-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="35dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:text="@string/new_button"-->
+                            <!--android:onClick="addMateria"-->
+                            <!--android:textSize="12sp"-->
+                            <!--android:layout_column="2" />-->
+
+                        <!--<Button-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="35dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:text="@string/new_button"-->
+                            <!--android:onClick="addMateria"-->
+                            <!--android:textSize="12sp"-->
+                            <!--android:layout_column="3" />-->
+
+                        <!--<Button-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="35dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:text="@string/new_button"-->
+                            <!--android:onClick="addMateria"-->
+                            <!--android:layout_column="4" />-->
+
+                        <!--<Button-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="35dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:text="@string/new_button"-->
+                            <!--android:onClick="addMateria"-->
+                            <!--android:textSize="12sp"-->
+                            <!--android:layout_column="5" />-->
+
+                        <!--<Button-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="35dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:text="@string/new_button"-->
+                            <!--android:onClick="addMateria"-->
+                            <!--android:textSize="12sp"-->
+                            <!--android:layout_column="6" />-->
+                    <!--</TableRow>-->
+
+                </LinearLayout>
+            </ScrollView>
+        </TableLayout>
+    </HorizontalScrollView>
+
+
+</RelativeLayout>

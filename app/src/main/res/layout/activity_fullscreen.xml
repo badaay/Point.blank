@@ -1,0 +1,722 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0074a8bc"
+    tools:context="com.example.pc01.pointblank.FullscreenActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="0,1,2"
+        android:gravity="center">
+        <TableRow
+            android:id="@+id/giorni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Lun"
+                android:id="@+id/textView15"
+                android:layout_column="3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Mar"
+                android:id="@+id/textView16"
+                android:layout_column="4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Mer"
+                android:id="@+id/textView17"
+                android:layout_column="5" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Gio"
+                android:id="@+id/textView18"
+                android:layout_column="6" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Ven"
+                android:id="@+id/textView19"
+                android:layout_column="7" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Sab"
+                android:id="@+id/textView20"
+                android:layout_column="8" />
+        </TableRow>
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="1"
+                        android:id="@+id/ora1"
+                        android:layout_column="0" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m11"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="1" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m12"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="2" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m13"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="3" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m14"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="4" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m15"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="5" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m16"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="6" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="2"
+                        android:id="@+id/textView22"
+                        android:layout_column="0" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m21"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="1" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m22"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="2" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m23"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="3" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m24"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="4" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m25"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="5" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m26"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="6" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="3"
+                        android:id="@+id/ora_3"
+                        android:layout_column="0" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m31"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="1" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m32"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="2" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m33"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="3" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m34"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="4" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m35"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="5" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m36"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="6" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="4"
+                        android:id="@+id/ora_4"
+                        android:layout_column="0" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m41"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="1" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m42"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="2" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m43"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="3" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m44"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="4" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m45"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="5" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m46"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="6" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="5"
+                        android:id="@+id/ora_5"
+                        android:layout_column="0" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m51"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="1" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m52"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="2" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m53"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="3" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m54"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="4" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m55"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="5" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m56"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="6" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="6"
+                        android:id="@+id/ora_6"
+                        android:layout_column="0" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m61"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="1" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m62"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="2" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m63"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="3" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m64"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="4" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m65"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="5" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m66"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="6" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="7"
+                        android:id="@+id/ora_7"
+                        android:layout_column="0" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m71"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="1" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m72"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="2" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m73"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="3" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m74"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="4" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m75"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="5" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m76"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="6" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="8"
+                        android:id="@+id/ora_8"
+                        android:layout_column="0" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m81"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="1" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m82"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="2" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m83"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="3" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m84"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="4" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m85"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="5" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/new_button"
+                        android:id="@+id/m86"
+                        android:onClick="addMateria"
+                        android:textSize="12sp"
+                        android:layout_column="6" />
+                </TableRow>
+
+            </LinearLayout>
+        </ScrollView>
+    </TableLayout>
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/ApproveButton"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/approve_button" />
+            <Button
+                android:id="@+id/RejectButton"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/reject_button" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
